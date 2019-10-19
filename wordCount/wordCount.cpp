@@ -31,7 +31,7 @@ typedef double db;
 typedef vector<int> vi;
 typedef pair<int, int> pii;
 const int inf=0x3f3f3f3f;
-void intput ()//huan
+void input ()//huan
 {
 	
 }
@@ -56,7 +56,7 @@ bool is_word(string )//zou
 	
 }
 
-sting lowcase(string )//wang
+string lowcase(string )//wang
 {
 	
 }
@@ -77,9 +77,10 @@ int main()//wen
 } 
 
 
-bool cmp()//sort qiu
+bool cmp(int a,int b)//sort qiu
 {
-	
+	if(rank[a]>rank[b])return a>b;
+	else if(rank[a]==rank[b])return word[a]<word[b];
 }
 
 
